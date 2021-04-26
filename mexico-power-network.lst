@@ -1,0 +1,19 @@
+18 Station18 8 10 23 21
+19 Station19 11 21
+29 Station29 5 9 10
+23 Station23 8 9 18 11
+4 Station04 7 6 8 20 5 21
+5 Station05 4 29 20 7 6 8 9 26 21
+6 Station06 5 7 4 20 21 8
+7 Station07 4 6 5 8 20 21
+9 Station09 5 8 23 29 20 21 11 10
+8 Station08 18 23 4 5 6 7 21 24 26 25 9 10 37 20
+10 Station10 18 29 8 11 9 20 25 26
+11 Station11 19 23 9 10 25 21 36
+20 Station20 4 5 6 7 8 9 10
+24 Station24 8 26
+26 Station26 5 8 24 10
+21 Station21 19 4 5 6 7 8 9 11 18
+36 Station36 37 11
+37 Station37 8 36
+25 Station25 10 11 8
