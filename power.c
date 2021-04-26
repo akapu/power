@@ -32,13 +32,6 @@ int main() {
 
     while ((c = getc(in)) != EOF)
     {
-        if (c == EOF)
-            break;
-        /*-----------------------------*/
-        if (c == EOF)
-            printf("EOF\n");
-        /*-----------------------------*/
-
         if (c == '\n')
         {
 
@@ -62,14 +55,6 @@ int main() {
             nodes[n_node].color = UNVIS;
 
             i = 0;
-/*---------------------------------------------------*/
-            printf("%d %s ", n_node, nodes[n_node].data);
-            for (i = 0; i < nodes[n_node].len_links; i++)
-               printf("%d ", nodes[n_node].links[i]);
-            printf("\n");
-            fflush(NULL);
-            i = 0;
-/*-----------------------------------------------------*/
         } 
         else
         {
