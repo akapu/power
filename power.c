@@ -74,11 +74,12 @@ int main() {
 
     if (find_path(path, nodes, &len_path, finish))
         for (i = 0; i < len_path; i++)
-            printf("%d, ", path[i]);
+            printf("%d ", path[i]);
     else
         printf("no solutions");
 
     printf("\n");
+    
 }
 
 int find_path(int *path, NODE *nodes, int *len_path, int finish)
@@ -90,7 +91,7 @@ int find_path(int *path, NODE *nodes, int *len_path, int finish)
         if (nodes[now].links[i] == finish)
         {
             path[*len_path] = finish;
-            len_path++;
+            (*len_path)++;
             return 1;
         }
 
@@ -106,13 +107,13 @@ int find_path(int *path, NODE *nodes, int *len_path, int finish)
             continue;
 
         path[*len_path] = link;
-        *len_path++;
+        (*len_path)++;
 
         if (find_path(path, nodes, len_path, finish))
             return 1;
     }
 
-    *len_path--;
+    (*len_path)--;
 
     return 0;
 }
